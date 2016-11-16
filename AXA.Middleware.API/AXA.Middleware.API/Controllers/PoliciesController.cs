@@ -11,7 +11,7 @@ using AXA.Middleware.API.Models;
 namespace AXA.Middleware.API.Controllers
 {
     [RoutePrefix("api/policies")]
-    //[Authorize(Roles = "admin")]
+    [Authorize(Roles = "admin")]
     public class PoliciesController : ApiController
     {
         private readonly UnitOfWork _unitOfWork = new UnitOfWork();

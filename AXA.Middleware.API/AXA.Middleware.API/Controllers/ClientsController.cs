@@ -10,7 +10,7 @@ using AXA.Middleware.API.Models;
 namespace AXA.Middleware.API.Controllers
 {
     [RoutePrefix("api/clients")]
-    //[Authorize(Roles = "admin,user")]
+    [Authorize(Roles = "admin,user")]
     public class ClientsController : ApiController
     {
         private readonly UnitOfWork _unitOfWork = new UnitOfWork();
